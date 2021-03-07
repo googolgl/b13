@@ -1,0 +1,388 @@
+{
+    "water_flowing":{
+        "description": "Flowing Water",
+        "_help": "Flowing Water.",
+        "_temperature": -1,
+        "_hardness": 0.1,
+        "wield_image": "water_flow.png^[verticalframe:64:0",
+	    "drawtype": "flowingliquid",
+        "tiles": ["water_flow.png^[verticalframe:64:0"],
+        "special_tiles": [
+            {
+                "image":"water_flow.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames", 
+                    "aspect_w":32, 
+                    "aspect_h":32,
+                    "length":4.0
+                }
+            },
+            {
+                "image":"water_flow.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames",
+                    "aspect_w":32,
+                    "aspect_h":32,
+                    "length":4.0
+                }
+            }
+        ],
+	    "use_texture_alpha": "blend",
+	    "paramtype": "light",
+	    "paramtype2": "flowingliquid",
+        "waving": 3,
+	    "walkable": false,
+	    "pointable": false,
+	    "diggable": false,
+	    "buildable_to": true,
+	    "drop": "",
+	    "drowning": 4,
+	    "liquidtype": "flowing",
+	    "liquid_alternative_flowing": "nodes:water_flowing",
+	    "liquid_alternative_source": "nodes:water_source",
+	    "liquid_viscosity": 1,
+	    "liquid_range": 7,
+	    "post_effect_color": {
+            "a":209,
+            "r":"0x03",
+            "g":"0x3C",
+            "b":"0x5C"
+        },
+        "groups": {"water":3, "liquid":3, "puts_out_fire":1, "not_in_creative_inventory":1, "freezes":1, "melt_around":1, "dig_by_piston":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_water_footstep",
+                "gain":0.2
+            },
+            "dug":{
+                "name":"default_water_footstep",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_water_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "water_source":{
+        "description": "Water Source",
+        "_help": "Water is abundant in oceans and also appears in a few springs in the ground. You can swim easily in water, but you need to catch your breath from time to time.",
+        "_temperature": -1,
+        "_hardness": 0.1,
+	    "drawtype": "liquid",
+        "tiles": [{
+            "name":"water_still.png",
+            "animation":{
+                "type":"vertical_frames",
+                "aspect_w":32,
+                "aspect_h":32,
+                "length":5.0
+                }
+            }],
+        "special_tiles": [
+            {
+                "name":"water_still.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames", 
+                    "aspect_w":32, 
+                    "aspect_h":32,
+                    "length":5.0
+                }
+            }
+        ],
+	    "use_texture_alpha": "blend",
+	    "paramtype": "light",
+        "waving": 3,
+	    "walkable": false,
+	    "pointable": false,
+	    "diggable": false,
+	    "buildable_to": true,
+	    "drowning": 4,
+	    "liquidtype": "source",
+	    "liquid_alternative_flowing": "nodes:water_flowing",
+	    "liquid_alternative_source": "nodes:water_source",
+	    "liquid_viscosity": 1,
+	    "liquid_range": 7,
+	    "post_effect_color": {
+            "a":209,
+            "r":"0x03",
+            "g":"0x3C",
+            "b":"0x5C"
+        },
+        "stack_max":64,
+        "groups": {"water":3, "liquid":3, "puts_out_fire":1, "not_in_creative_inventory":0, "freezes":1, "melt_around":1, "dig_by_piston":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_water_footstep",
+                "gain":0.2
+            },
+            "dug":{
+                "name":"default_water_footstep",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_water_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "river_water_flowing":{
+        "description": "River flowing Water",
+        "_help": "River flowing Water.",
+        "_temperature": -1,
+        "_hardness": 0.1,
+        "wield_image": "water_river_flow.png^[verticalframe:64:0",
+	    "drawtype": "flowingliquid",
+        "tiles": ["water_river_flow.png^[verticalframe:64:0"],
+        "special_tiles": [
+            {
+                "image":"water_river_flow.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames", 
+                    "aspect_w":16, 
+                    "aspect_h":16,
+                    "length":4.0
+                }
+            },
+            {
+                "image":"water_river_flow.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames",
+                    "aspect_w":16,
+                    "aspect_h":16,
+                    "length":4.0
+                }
+            }
+        ],
+	    "use_texture_alpha": "blend",
+	    "paramtype": "light",
+	    "paramtype2": "flowingliquid",
+        "waving": 3,
+	    "walkable": false,
+	    "pointable": false,
+	    "diggable": false,
+	    "buildable_to": true,
+	    "drop": "",
+	    "drowning": 4,
+	    "liquidtype": "flowing",
+	    "liquid_alternative_flowing": "nodes:river_water_flowing",
+	    "liquid_alternative_source": "nodes:river_water_source",
+	    "liquid_viscosity": 1,
+	    "liquid_range": 7,
+	    "post_effect_color": {
+            "a":209,
+            "r":"0x03",
+            "g":"0x3C",
+            "b":"0x5C"
+        },
+        "groups": {"water":3, "liquid":3, "puts_out_fire":1, "not_in_creative_inventory":1, "freezes":1, "melt_around":1, "dig_by_piston":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_water_footstep",
+                "gain":0.2
+            },
+            "dug":{
+                "name":"default_water_footstep",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_water_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "river_water_source":{
+        "description": "River_water Source",
+        "_help": "Water is abundant in oceans and also appears in a few springs in the ground. You can swim easily in water, but you need to catch your breath from time to time.",
+        "_temperature": -1,
+        "_hardness": 0.1,
+	    "drawtype": "liquid",
+        "tiles": [{
+            "name":"water_river_still.png",
+            "animation":{
+                "type":"vertical_frames",
+                "aspect_w":16,
+                "aspect_h":16,
+                "length":5.0
+                }
+            }],
+        "special_tiles": [
+            {
+                "name":"water_river_still.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames", 
+                    "aspect_w":16, 
+                    "aspect_h":16,
+                    "length":5.0
+                }
+            }
+        ],
+	    "use_texture_alpha": "blend",
+	    "paramtype": "light",
+        "waving": 3,
+	    "walkable": false,
+	    "pointable": false,
+	    "diggable": false,
+	    "buildable_to": true,
+	    "drowning": 4,
+	    "liquidtype": "source",
+	    "liquid_alternative_flowing": "nodes:river_water_flowing",
+	    "liquid_alternative_source": "nodes:river_water_source",
+	    "liquid_viscosity": 1,
+	    "liquid_range": 7,
+	    "post_effect_color": {
+            "a":209,
+            "r":"0x03",
+            "g":"0x3C",
+            "b":"0x5C"
+        },
+        "stack_max":64,
+        "groups": {"water":3, "liquid":3, "puts_out_fire":1, "not_in_creative_inventory":0, "freezes":1, "melt_around":1, "dig_by_piston":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_water_footstep",
+                "gain":0.2
+            },
+            "dug":{
+                "name":"default_water_footstep",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_water_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "lava_flowing":{
+        "description": "Flowing Lava",
+        "_help": "Flowing Lava.",
+        "_temperature": 5.0,
+        "_hardness": 0.6,
+        "wield_image": "lava_flow.png^[verticalframe:64:0",
+	    "drawtype": "flowingliquid",
+        "tiles": ["lava_flow.png^[verticalframe:64:0"],
+        "special_tiles": [
+            {
+                "image":"lava_flow.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames", 
+                    "aspect_w":16, 
+                    "aspect_h":16,
+                    "length":6.6
+                }
+            },
+            {
+                "image":"lava_flow.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames",
+                    "aspect_w":16,
+                    "aspect_h":16,
+                    "length":6.6
+                }
+            }
+        ],
+	    "use_texture_alpha": "blend",
+	    "paramtype": "light",
+	    "paramtype2": "flowingliquid",
+        "light_source":13,
+	    "walkable": false,
+	    "pointable": false,
+	    "diggable": false,
+	    "buildable_to": true,
+	    "drowning": 4,
+        "damage_per_second": 8,
+	    "liquidtype": "flowing",
+	    "liquid_alternative_flowing": "nodes:lava_flowing",
+	    "liquid_alternative_source": "nodes:lava_source",
+	    "liquid_viscosity": 7,
+	    "liquid_range": 3,
+	    "post_effect_color": {
+            "a":245,
+            "r":208,
+            "g":73,
+            "b":10
+        },
+        "groups": {"lava":3, "lava_source":1, "liquid":2, "destroys_items":1, "not_in_creative_inventory":1, 
+            "set_on_fire":15, "dig_by_piston":1},
+        "sounds":{
+            "place":{
+                "name":"default_place_node_lava",
+                "gain":1.0
+            },
+            "dug":{
+                "name":"default_place_node_lava",
+                "gain":1.0
+            }
+        }
+    },
+    "lava_source":{
+        "description": "Lava Source",
+        "_help": "Lava is hot and rather dangerous. Don't touch it, it will hurt you a lot and it is hard to get out.",
+        "_temperature": 5.0,
+        "_hardness": 0.6,
+	    "drawtype": "liquid",
+        "tiles": [{
+            "name":"lava_still.png",
+            "animation":{
+                "type":"vertical_frames",
+                "aspect_w":16,
+                "aspect_h":16,
+                "length":5.0
+                }
+            }],
+        "special_tiles": [
+            {
+                "name":"lava_still.png",
+                "backface_culling":false,
+                "animation":{
+                    "type":"vertical_frames", 
+                    "aspect_w":16, 
+                    "aspect_h":16,
+                    "length":5.0
+                }
+            }
+        ],
+        "is_ground_content": false,
+	    "use_texture_alpha": "blend",
+	    "paramtype": "light",
+        "light_source":13,
+	    "walkable": false,
+	    "pointable": false,
+	    "diggable": false,
+	    "buildable_to": true,
+	    "drowning": 4,
+	    "liquidtype": "source",
+	    "liquid_alternative_flowing": "nodes:lava_flowing",
+	    "liquid_alternative_source": "nodes:lava_source",
+	    "liquid_viscosity": 7,
+	    "liquid_range": 3,
+        "damage_per_second": 8,
+	    "post_effect_color": {
+            "a":245,
+            "r":208,
+            "g":73,
+            "b":10
+        },
+        "stack_max":64,
+        "groups": {"lava":3, "lava_source":1, "liquid":2, "destroys_items":1, "not_in_creative_inventory":0, 
+            "set_on_fire":15, "dig_by_piston":1},
+        "sounds":{
+            "dug":{
+                "name":"default_place_node_lava",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node_lava",
+                "gain":1.0
+            }
+        }
+    }
+}
