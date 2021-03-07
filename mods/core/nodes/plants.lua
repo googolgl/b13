@@ -1,7 +1,7 @@
---- Leaves
---- Листья
+--- Plants
+--- Растения
 
-local path_to_file = modpath .. "/json/leaves.json"
+local path_to_file = modpath .. "/json/plants.json"
 local res = json_2_table(path_to_file)
 
 if type(res) == "table" then
@@ -15,16 +15,11 @@ if type(res) == "table" then
         end]]
         v.description = S(v.description)
         v._help = S(v._help)
-        v.drawtype = "mesh"
-	    v.mesh = "leaves.obj"
-        --v.paramtype = "light"
-        v.use_texture_alpha = "clip"
-        v.waving = 2
-	    --v.walkable = true
-        --v.liquid_viscosity = 8
-	    --v.liquidtype = "source"
-	    --v.liquid_renewable = false
-	    --v.liquid_range = 0
+        v.drawtype = "plantlike"
+        v.paramtype = "light"
+        v.waving = 1
+        v.walkable = false
+        v.buildable_to = true
         v.sounds = node_sound_defaults({
             footstep = {
                 name = "default_grass_footstep",
