@@ -1,0 +1,147 @@
+{
+    "leaves_apple":{
+        "description": "Apple leaves",
+        "_help": "The apple leaves.",
+        "_temperature": -0.3,
+        "_hardness": 0.1,
+        "tiles": ["apple_leaves.png"],
+        "inventory_image":"apple_leaves_inv.png",
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_grass_footstep",
+                "gain":0.1325
+            },
+            "dug":{
+                "name":"default_grass_footstep",
+                "gain":0.425
+            },
+            "dig":{
+                "name":"default_dig_snappy",
+                "gain":0.4
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "leaves_acacia":{
+        "description": "Acacia leaves",
+        "_help": "The acacia leaves.",
+        "_temperature": -0.3,
+        "_hardness": 0.1,
+        "tiles": ["acacia_leaves.png"],
+        "inventory_image":"acacia_leaves_inv.png",
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_grass_footstep",
+                "gain":0.1325
+            },
+            "dug":{
+                "name":"default_grass_footstep",
+                "gain":0.425
+            },
+            "dig":{
+                "name":"default_dig_snappy",
+                "gain":0.4
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "leaves_birch":{
+        "description": "Birch leaves",
+        "_help": "The birch leaves.",
+        "_temperature": -0.3,
+        "_hardness": 0.1,
+        "tiles": ["birch_leaves.png"],
+        "inventory_image":"birch_leaves_inv.png",
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_grass_footstep",
+                "gain":0.1325
+            },
+            "dug":{
+                "name":"default_grass_footstep",
+                "gain":0.425
+            },
+            "dig":{
+                "name":"default_dig_snappy",
+                "gain":0.4
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "leaves_jungle":{
+        "description": "Jungle leaves",
+        "_help": "The jungle leaves.",
+        "_temperature": -0.4,
+        "_hardness": 0.1,
+        "tiles": ["jungle_leaves.png"],
+        "inventory_image":"jungle_leaves_inv.png",
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_grass_footstep",
+                "gain":0.1325
+            },
+            "dug":{
+                "name":"default_grass_footstep",
+                "gain":0.425
+            },
+            "dig":{
+                "name":"default_dig_snappy",
+                "gain":0.4
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "leaves_spruce":{
+        "description": "Spruce leaves",
+        "_help": "The spruce leaves.",
+        "_temperature": -0.1,
+        "_hardness": 0.1,
+        "tiles": ["spruce_leaves.png"],
+        "inventory_image":"spruce_leaves_inv.png",
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_grass_footstep",
+                "gain":0.1325
+            },
+            "dug":{
+                "name":"default_grass_footstep",
+                "gain":0.425
+            },
+            "dig":{
+                "name":"default_dig_snappy",
+                "gain":0.4
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    }
+}

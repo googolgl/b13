@@ -37,7 +37,6 @@
 	    "pointable": false,
 	    "diggable": false,
 	    "buildable_to": true,
-	    "drop": "",
 	    "drowning": 4,
 	    "liquidtype": "flowing",
 	    "liquid_alternative_flowing": "nodes:water_flowing",

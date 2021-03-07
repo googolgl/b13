@@ -41,20 +41,6 @@ function mcl_sounds.node_sound_wool_defaults(table)
 	return table
 end
 
-function mcl_sounds.node_sound_leaves_defaults(table)
-	table = table or {}
-	table.footstep = table.footstep or
-			{name="default_grass_footstep", gain=0.1325}
-	table.dug = table.dug or
-			{name="default_grass_footstep", gain=0.425}
-	table.dig = table.dig or
-			{name="default_dig_snappy", gain=0.4}
-	table.place = table.place or
-			{name="default_place_node", gain=1.0}
-	mcl_sounds.node_sound_defaults(table)
-	return table
-end
-
 function mcl_sounds.node_sound_glass_defaults(table)
 	table = table or {}
 	table.footstep = table.footstep or
