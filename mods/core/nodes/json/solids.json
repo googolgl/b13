@@ -184,7 +184,6 @@
         "_help": "A grass block is dirt with a grass cover. Grass blocks are resourceful blocks which allow the growth of all sorts of plants. They can be turned into farmland with a hoe and turned into grass paths with a shovel. In light, the grass slowly spreads onto dirt nearby. Under an opaque block or a liquid, a grass block may turn back to dirt.",
         "_temperature": 0.5,
         "_hardness": 0.6,
-        "paramtype2": "color",
         "tiles": ["snow.png", "dirt.png", {"name":"grass_block_snow.png", "tileable_vertical":false}],
         "drop": "nodes:dirt",
         "stack_max": 64,
@@ -232,6 +231,57 @@
             },
             "place":{
                 "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "blue_ice":{
+        "description": "Blue ice",
+        "_help": "Blue ice is a solid block usually found in cold areas. It melts near block light sources at a light level of 12 or higher. When it melts or is broken while resting on top of another block, it will turn into a water source.",
+        "_temperature": -2.3,
+        "_hardness": 1.6,
+        "tiles": ["blue_ice.png"],
+        "paramtype":"light",
+        "drawtype": "glasslike",
+	    "use_texture_alpha": "blend",
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "handy":1, "building_block":1, "slippery":3, "ice":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_glass_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_break_glass",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "ice":{
+        "description": "Ice",
+        "_help": "Ice is a solid block usually found in cold areas. It melts near block light sources at a light level of 12 or higher. When it melts or is broken while resting on top of another block, it will turn into a water source.",
+        "_temperature": -2.3,
+        "_hardness": 1.6,
+        "tiles": ["packed_ice.png"],
+        "paramtype":"light",
+	    "use_texture_alpha": "blend",
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "handy":1, "building_block":1, "slippery":3, "ice":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_glass_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_break_glass",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_cracky",
                 "gain":1.0
             }
         }

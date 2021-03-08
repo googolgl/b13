@@ -17,10 +17,10 @@ if type(res) == "table" then
         v._help = S(v._help)
         v.drawtype = "mesh"
 	    v.mesh = "leaves.obj"
-        --v.paramtype = "light"
+        v.paramtype = "light"
         v.use_texture_alpha = "clip"
         v.waving = 2
-	    --v.walkable = true
+        v.walkable = true
         --v.liquid_viscosity = 8
 	    --v.liquidtype = "source"
 	    --v.liquid_renewable = false
