@@ -10,6 +10,18 @@
         "stack_max": 64,
         "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1}
     },
+
+    "leaves_oak":{
+        "description": "Oak leaves",
+        "_help": "The oak leaves.",
+        "_temperature": -0.3,
+        "_hardness": 0.1,
+        "tiles": ["oak_leaves.png"],
+        "inventory_image":"oak_leaves_inv.png",
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"flammable":2, "fire_flammability":5, "snappy":3, "leafdecay":3, "leaves":1}
+    },
     "leaves_acacia":{
         "description": "Acacia leaves",
         "_help": "The acacia leaves.",

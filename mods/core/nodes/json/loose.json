@@ -1,56 +1,85 @@
 {
-"sand":{
-    "description": "Sand",
-    "_help": "Sand is found in large quantities at beaches and deserts.",
-    "_temperature": 1,
-    "_hardness": 0.3,
-    "tiles": ["sand.png"],
-    "stack_max": 64,
-    "groups": {"handy":1,"shovely":1, "falling_node":1, "sand":1, "soil_sugarcane":1, "enderman_takable":1, "building_block":1, "material_sand":1},
-    "sounds":{
-        "footstep":{
-            "name":"default_sand_footstep",
-            "gain":0.5
-        },
-        "dug":{
-            "name":"default_sand_footstep",
-            "gain":1.0
-        },
-        "dig":{
-            "name":"default_dig_crumbly",
-            "gain":1.0
-        },
-        "place":{
-            "name":"default_place_node",
-            "gain":1.0
+    "sand":{
+        "description": "Sand",
+        "_help": "Sand is found in large quantities at beaches and deserts.",
+        "_temperature": 1,
+        "_hardness": 0.3,
+        "tiles": ["sand.png"],
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"handy":1,"shovely":1, "falling_node":1, "sand":1, "soil_sugarcane":1, "enderman_takable":1, "building_block":1, "material_sand":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_sand_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_sand_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "red_sand":{
+        "description": "Red Sand",
+        "_help": "Red sand is found in large quantities at beaches and deserts.",
+        "_temperature": 1.5,
+        "_hardness": 0.3,
+        "tiles": ["red_sand.png"],
+        "is_ground_content": false,
+        "stack_max": 64,
+        "groups": {"handy":1,"shovely":1, "falling_node":1, "sand":1, "soil_sugarcane":1, "enderman_takable":1, "building_block":1, "material_sand":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_sand_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_sand_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "snow":{
+        "description": "Top Snow",
+        "_help": "Top snow is a layer of snow. It melts near light sources other than the sun with a light level of 12 or higher.",
+        "_temperature": -1.5,
+        "_hardness": 0.1,
+        "tiles": ["snow.png"],
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"pedology_snow_soft_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"pedology_snow_soft_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
         }
     }
-},
-"red_sand":{
-    "description": "Red Sand",
-    "_help": "Red sand is found in large quantities at beaches and deserts.",
-    "_temperature": 1.5,
-    "_hardness": 0.3,
-    "tiles": ["red_sand.png"],
-    "stack_max": 64,
-    "groups": {"handy":1,"shovely":1, "falling_node":1, "sand":1, "soil_sugarcane":1, "enderman_takable":1, "building_block":1, "material_sand":1},
-    "sounds":{
-        "footstep":{
-            "name":"default_sand_footstep",
-            "gain":0.5
-        },
-        "dug":{
-            "name":"default_sand_footstep",
-            "gain":1.0
-        },
-        "dig":{
-            "name":"default_dig_crumbly",
-            "gain":1.0
-        },
-        "place":{
-            "name":"default_place_node",
-            "gain":1.0
-        }
-    }
-}
 }

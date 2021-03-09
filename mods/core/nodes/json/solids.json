@@ -47,6 +47,53 @@
             }
         }
     },
+    "andesite":{
+        "description": "Andesite",
+        "_help": "Andesite.",
+        "_temperature": -0.6,
+        "_hardness": 1.6,
+        "tiles": ["andesite.png"],
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_hard_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_hard_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "mossy_stone_bricks":{
+        "description": "Mossy stone bricks",
+        "_help": "Old stone bricks.",
+        "_temperature": -0.7,
+        "_hardness": 1.5,
+        "_forms":["_form_slab","_form_pillar","_form_pillar_slab","_form_stair"],
+        "tiles": ["mossy_stone_bricks.png"],
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_hard_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_hard_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_cracky",
+                "gain":1.0
+            }
+        }
+    },
     "mossy_cobblestone":{
         "description": "Mossy Cobblestone",
         "_help": "Old Cobblestone.",
@@ -102,6 +149,30 @@
         "_hardness": 2,
         "tiles": ["stone_bricks.png"],
         "_forms":["_form_slab","_form_pillar","_form_pillar_slab","_form_stair"],
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_hard_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"default_hard_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_cracky",
+                "gain":1.0
+            }
+        }
+    },
+    "stone_cracked_bricks":{
+        "description": "Cracked stone bricks",
+        "_help": "One of the most common blocks in the world, almost the entire underground consists of stone. It sometimes contains ores. Stone may be created when water meets lava.",
+        "_temperature": -0.3,
+        "_hardness": 2,
+        "tiles": ["cracked_stone_bricks.png"],
+        "_forms":["_form_slab","_form_pillar", "_form_pillar_slab","_form_stair"],
         "stack_max": 64,
         "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
         "sounds":{
@@ -240,6 +311,7 @@
         "_help": "Blue ice is a solid block usually found in cold areas. It melts near block light sources at a light level of 12 or higher. When it melts or is broken while resting on top of another block, it will turn into a water source.",
         "_temperature": -2.3,
         "_hardness": 1.6,
+        "is_ground_content": false,
         "tiles": ["blue_ice.png"],
         "paramtype":"light",
         "drawtype": "glasslike",
@@ -264,8 +336,9 @@
     "ice":{
         "description": "Ice",
         "_help": "Ice is a solid block usually found in cold areas. It melts near block light sources at a light level of 12 or higher. When it melts or is broken while resting on top of another block, it will turn into a water source.",
-        "_temperature": -2.3,
-        "_hardness": 1.6,
+        "_temperature": -2.5,
+        "_hardness": 1.8,
+        "is_ground_content": false,
         "tiles": ["packed_ice.png"],
         "paramtype":"light",
 	    "use_texture_alpha": "blend",

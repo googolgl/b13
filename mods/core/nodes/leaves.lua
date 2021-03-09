@@ -8,11 +8,28 @@ if type(res) == "table" then
     for name, v in pairs(res) do
         --print(dump(v))
         -- если какой то из нод необходимо прописать кастомную функцию, добавляем условие по имени
-        --[[if name == "lava" then
+        if name == "leaves_apple" then
+            --[[v.drop = {
+                max_items = 1,
+                items = {
+                    {
+                        items = {sapling},
+                        rarity = sapling_chances[fortune_level + 1] or sapling_chances[fortune_level]
+                    },
+                    {
+                        items = {"mcl_core:stick 1"},
+                        rarity = stick_chances[fortune_level + 1]
+                    },
+                    {
+                        items = {"mcl_core:stick 2"},
+                        rarity = stick_chances[fortune_level + 1]
+                    },
+                }
+            }]]
 
-        elseif name == "snow" then
+        --elseif name == "snow" then
+        end
 
-        end]]
         v.description = S(v.description)
         v._help = S(v._help)
         v.drawtype = "mesh"
