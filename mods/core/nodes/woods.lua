@@ -38,12 +38,12 @@ if type(res) == "table" then
         -- генерим дополнительные формы из этого материала
         if  type(v._forms) == "string" and v._forms == "all" then
             for fname, fv in pairs(forms) do
-                new_v = handler_forms(v,fv,fname)
+                new_v = forms_handler(v,fv,fname)
                 minetest.register_node("nodes:"..name..fname, new_v)
             end
         elseif type(v._forms) == "table" then
             for _, shape in pairs(v._forms) do
-                new_v = handler_forms(v,forms[shape],shape)
+                new_v = forms_handler(v,forms[shape],shape)
                 minetest.register_node("nodes:"..name..shape, new_v)
             end
         end

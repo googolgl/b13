@@ -37,7 +37,7 @@ if type(res) == "table" then
         v.paramtype = "light"
         v.use_texture_alpha = "clip"
         v.waving = 2
-        v.walkable = true
+        v.walkable = false
         --v.liquid_viscosity = 8
 	    --v.liquidtype = "source"
 	    --v.liquid_renewable = false
