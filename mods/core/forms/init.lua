@@ -19,8 +19,10 @@ function forms_handler(def_table, form, name)
     new_table.paramtype = form.paramtype or "light"
     new_table.paramtype2 = form.paramtype2 or "facedir"
     new_table.sunlight_propagates = true
-    new_table.node_box = form.node_box
-    new_table.selection_box = form.selection_box or form.node_box
-    new_table.collision_box = form.collision_box or form.node_box
+    new_table.is_ground_content = false
+    new_table.selection_box = form.selection_box
+    new_table.collision_box = form.collision_box or form.selection_box
+    --new_table.node_box = form.node_box
+    new_table.mesh = def_table.mesh or form.mesh
     return new_table
 end

@@ -28,19 +28,18 @@ if type(res) == "table" then
         v._help = S(v._help)
         v.sounds = node_sound_defaults(v.sounds)
         
-        minetest.register_node("nodes:"..name, v)
-
         -- генерим дополнительные формы из этого материала
-        if  type(v._forms) == "string" and v._forms == "all" then
-            for fname, fv in pairs(forms) do
-                new_v = forms_handler(v,fv,fname)
-                minetest.register_node("nodes:"..name..fname, new_v)
-            end
-        elseif type(v._forms) == "table" then
+        if type(v._forms) == "table" then
             for _, shape in pairs(v._forms) do
-                new_v = forms_handler(v,forms[shape],shape)
-                minetest.register_node("nodes:"..name..shape, new_v)
+                if shape == "_form_cube" then
+                    minetest.register_node("nodes:"..name, v)
+                else
+                    new_v = forms_handler(v,forms[shape],shape)
+                    minetest.register_node("nodes:"..name..shape, new_v)
+                end
             end
+        else
+            minetest.register_node("nodes:"..name, v)
         end
     end
 end
