@@ -1,0 +1,118 @@
+{
+    "dirt":{
+        "description": "Dirt",
+        "_help": "Dirt acts as a soil for a few plants. When in light, this block may grow a grass or mycelium cover if such blocks are nearby.",
+        "_temperature": 0.5,
+        "_hardness": 0.6,
+        "tiles": ["dirt.png"],
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_dirt_footstep",
+                "gain":1.0
+            },
+            "dug":{
+                "name":"default_dirt_footstep",
+                "gain":1.5
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "dirt_with_grass":{
+        "description": "Grass Block",
+        "_help": "A grass block is dirt with a grass cover. Grass blocks are resourceful blocks which allow the growth of all sorts of plants. They can be turned into farmland with a hoe and turned into grass paths with a shovel. In light, the grass slowly spreads onto dirt nearby. Under an opaque block or a liquid, a grass block may turn back to dirt.",
+        "_temperature": 0.5,
+        "_hardness": 0.6,
+        "paramtype2": "color",
+        "tiles": ["", {"name":"dirt.png", "color":"white"}, {"name":"grass_block_side.png", "color":"white"}],
+        "overlay_tiles": ["grass_block_top.png", "", {"name":"grass_block_side_overlay.png", "tileable_vertical":false}],
+        "palette":"palette_grass.png",
+	    "palette_index":1,
+	    "color":"#55aa60",
+        "drop": "nodes:dirt",
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_dirt_footstep",
+                "gain":1.0
+            },
+            "dug":{
+                "name":"default_dirt_footstep",
+                "gain":1.5
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "dirt_with_grass_snow":{
+        "description": "Dirt with Snow",
+        "_help": "A grass block is dirt with a grass cover. Grass blocks are resourceful blocks which allow the growth of all sorts of plants. They can be turned into farmland with a hoe and turned into grass paths with a shovel. In light, the grass slowly spreads onto dirt nearby. Under an opaque block or a liquid, a grass block may turn back to dirt.",
+        "_temperature": 0.5,
+        "_hardness": 0.6,
+        "tiles": ["snow.png", "dirt.png", {"name":"grass_block_snow.png", "tileable_vertical":false}],
+        "drop": "nodes:dirt",
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"pedology_snow_soft_footstep",
+                "gain":0.5
+            },
+            "dug":{
+                "name":"pedology_snow_soft_footstep",
+                "gain":1.0
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    },
+    "podzol":{
+        "description": "Podzol",
+        "_help": "Podzol is a type of dirt found in taiga forests. Only a few plants are able to survive on it.",
+        "_temperature": 0.3,
+        "_hardness": 0.6,
+        "tiles": ["podzol_top.png", "dirt.png", {"name":"podzol_side.png", "tileable_vertical":false}],
+        "drop": "nodes:dirt",
+        "stack_max": 64,
+        "groups": {"pickaxey":1, "stone":1, "building_block":1, "material_stone":1},
+        "sounds":{
+            "footstep":{
+                "name":"default_dirt_footstep",
+                "gain":1.0
+            },
+            "dug":{
+                "name":"default_dirt_footstep",
+                "gain":1.5
+            },
+            "dig":{
+                "name":"default_dig_crumbly",
+                "gain":1.0
+            },
+            "place":{
+                "name":"default_place_node",
+                "gain":1.0
+            }
+        }
+    }
+}

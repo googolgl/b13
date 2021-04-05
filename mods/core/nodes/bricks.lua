@@ -1,7 +1,7 @@
---- Solids
---- Твердые
+--- Bricks
+--- Кирпичи
 
-local path_to_file_res = modpath .. "/json/solids.json"
+local path_to_file_res = modpath .. "/json/bricks.json"
 local res = json_2_table(path_to_file_res)
 
 --[[local function on_construct_dirt_with_grass(pos)

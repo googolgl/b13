@@ -1,7 +1,7 @@
---- Solids
---- Твердые
+--- Dirts
+--- Грунты
 
-local path_to_file_res = modpath .. "/json/solids.json"
+local path_to_file_res = modpath .. "/json/dirts.json"
 local res = json_2_table(path_to_file_res)
 
 --[[local function on_construct_dirt_with_grass(pos)
@@ -19,7 +19,7 @@ if type(res) == "table" then
     for name, v in pairs(res) do
         --print(dump(v))
         -- если какой то из нод необходимо прописать кастомную функцию, добавляем условие по имени
-        if name == "andesite" then
+        if name == "dirt_with_grass" then
         --    v.on_construct = on_construct_dirt_with_grass(pos)
         --elseif name == "snow" then
 
@@ -28,18 +28,6 @@ if type(res) == "table" then
         v._help = S(v._help)
         v.sounds = node_sound_defaults(v.sounds)
         
-        -- генерим дополнительные формы из этого материала
-        if type(v._forms) == "table" then
-            for _, shape in pairs(v._forms) do
-                if shape == "_form_cube" then
-                    minetest.register_node("nodes:"..name, v)
-                else
-                    new_v = forms_handler(v,forms[shape],shape)
-                    minetest.register_node("nodes:"..name..shape, new_v)
-                end
-            end
-        else
-            minetest.register_node("nodes:"..name, v)
-        end
+        minetest.register_node("nodes:"..name, v)
     end
 end

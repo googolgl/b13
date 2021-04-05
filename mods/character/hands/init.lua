@@ -7,7 +7,7 @@
 --if has_mcl_skins == true then
 --	list = mcl_skins.list
 --else
-	list = { "hand" }
+	--list = { "hand" }
 --end
 
 --generate a node for every skin
@@ -22,7 +22,7 @@
 		drawtype = "mesh",
 		mesh = "hand.obj",
 		-- Prevent construction
-		--node_placement_prediction = nil,
+		node_placement_prediction = "",
 		--on_construct = function(pos)
 			--minetest.remove_node(pos)
 		--	minetest.log("error", "[hand] Trying to construct hand: at "..minetest.pos_to_string(pos))
@@ -32,7 +32,9 @@
             fixed = {{0.0, 0.0, 0.0, 0.0, 0.0, 0.0}}
         },
 		on_place = function(itemstack, placer, pointed_thing)
-			if minetest.get_node(pointed_thing.under).name == "default:chest_locked" then
+			local gn = minetest.get_node(pointed_thing.under)
+			print(dump(gn))
+			if gn.name == "default:chest_locked" then
 					minetest.item_place(itemstack, placer, pointed_thing, param2)
 			end
 		end,
@@ -40,8 +42,9 @@
 		on_drop = function()
 			return nil
 		end,
-		groups = { dig_immediate = 3, not_in_creative_inventory = 0 },
-		})
+		groups = { dig_immediate = 3, not_in_creative_inventory = 1 },
+		--range = def.range,
+	})
 --end
 
 --if has_mcl_skins == true then
@@ -52,7 +55,12 @@
 --		player:get_inventory():set_stack("hand", 1, "hand:"..skin)
 --	end)
 --else
-	minetest.register_on_joinplayer(function(player)
-		player:get_inventory():set_stack("hand", 1, "hands:right")
-	end)
+minetest.register_on_joinplayer(function(player)
+	local stack = player:get_inventory():get_stack("hand", 1)
+	stack:set_name("hands:right")
+	--print(dump(stack))
+	player:get_inventory():set_stack("hand", 1, stack)
+	--player:set_stack("hand", 1, "hands:right")
+
+end)
 --end

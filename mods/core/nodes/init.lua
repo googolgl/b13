@@ -5,6 +5,8 @@ modpath = minetest.get_modpath("nodes")
 
 --require(modpath .. "/solids.lua")
 dofile(modpath .. "/solids.lua")
+dofile(modpath .. "/dirts.lua")
+dofile(modpath .. "/bricks.lua")
 dofile(modpath .. "/loose.lua")
 dofile(modpath .. "/ores.lua")
 dofile(modpath .. "/liquids.lua")
